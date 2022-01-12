@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+body {
+  font-family: sans-serif;
+}
+.AdContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #222;
+  min-width: 250px;
+  min-height: 125px;
+  width: fit-content;
+  color: #000;
+  box-shadow: 0 0 3px 3px #222;
+}
+.darkTheme {
+  background-color: #222;
+  color: #fff;
+  border: 3px solid white;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px gray;
+  padding: 15px;
+  color: #0e3c7e;
+  font-size: x-large;
+}
+
+button {
+  border: 1px solid black;
+  background-color: #0e3c7e;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 3px 3px 3px 3px;
+}
+
+button:hover {
+  background-color: #1e60a9;
+  transition-duration: 0.3s;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.header {
+  font-family: "Caveat", cursive;
+}
+
+.bluemoon {
+  height: 15px;
+  background-color: cadetblue;
+  width: 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.vanilla {
+  height: 15px;
+  background-color: burlywood;
+  width: 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.superman {
+  height: 15px;
+  background-color: crimson;
+  width: 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.empty {
+  display: none;
+}
+
+.AllAdContainer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .bodyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
