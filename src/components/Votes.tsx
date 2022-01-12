@@ -22,7 +22,10 @@ function Votes() {
         <div>
           <div className={voteBlueMoon === 0 ? "empty" : "random"}>
             <p>
-              Blue Moon: {voteBlueMoon} ({blueMoonAverage.toFixed(1)}%)
+              Blue Moon:{" "}
+              <span className="voteCount">
+                {voteBlueMoon} ({blueMoonAverage.toFixed(1)}%)
+              </span>
             </p>
             <div
               style={{ width: `${voteBlueMoon}%` }}
@@ -31,13 +34,19 @@ function Votes() {
           </div>
           <div className={voteVanilla === 0 ? "empty" : "random"}>
             <p>
-              Vanilla: {voteVanilla} ({vanillaAverage.toFixed(1)}%)
+              Vanilla:{" "}
+              <span className="voteCount">
+                {voteVanilla} ({vanillaAverage.toFixed(1)}%)
+              </span>
             </p>
             <div style={{ width: `${voteVanilla}%` }} className="vanilla"></div>
           </div>
           <div className={voteSuperman === 0 ? "empty" : "random"}>
             <p>
-              SuperMan: {voteSuperman} ({SupermanAverage.toFixed(1)}%)
+              SuperMan:
+              <span className="voteCount">
+                {voteSuperman} ({SupermanAverage.toFixed(1)}%)
+              </span>
             </p>
             <div
               style={{ width: `${voteSuperman}%` }}

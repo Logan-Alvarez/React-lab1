@@ -81,6 +81,9 @@ button:disabled {
 .AllAdContainer {
   margin-top: 20px;
 }
+.voteCount {
+  float: right;
+}
 
 @media screen and (min-width: 768px) {
   .bodyContainer {
